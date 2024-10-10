@@ -1,101 +1,88 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    font-size: 12pt;
-    background-color: #000000; 
-    color: #D3D3D3; 
-    margin: 20pt;
-}
-
-h1 {
-    font-family: 'Georgia', serif;
-    font-size: 32pt;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA; /* Light Gray */
+    color: #1D3557; /* Navy Blue text */
     text-align: center;
-    color: #5c0a96;
 }
 
-h2 {
-    font-family: 'Courier New', monospace;
-    font-size: 26pt;
-    color: #6A0DAD;
-
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1D3557; /* Navy Blue */
+    overflow: hidden;
 }
 
-h4, h5 {
-    font-family: 'Arial', sans-serif;
-    font-size: 20pt;
-    color: #D3D3D3; 
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
-p {
-    font-family: Arial, sans-serif;
-    font-size: 14pt;
-    color: #D3D3D3; 
-}
-
-li {
-    font-size: 14pt;
-    color: #D3D3D3; 
-}
-
-a:link, a:visited {
-    color: #1E90FF; 
+nav ul li a {
+    color: #F1FAEE; /* White */
     text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
 }
 
-a:hover {
-    color: #9932CC; 
-    text-decoration: underline;
+nav ul li a:hover {
+    background-color: #A8DADC; /* Soft Light Blue */
+    color: #1D3557; /* Navy Blue */
 }
 
-a:active {
-    color: #4B0082; 
+/* Main Content */
+.main-content h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    color: #1D3557; /* Navy Blue */
 }
 
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Add the button styles here */
+button {
     margin: 20px 0;
-    border: 1px solid #696969;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1D3557; /* Navy Blue background */
+    color: #F1FAEE; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-th, td {
-    border: 1px solid #696969; 
-    padding: 15px;
-    text-align: left;
+button:hover {
+    background-color: #A8DADC; /* Soft Light Blue on hover */
 }
 
-th {
-    background-color: #333333; 
-    color: #8132b9; 
-    font-size: 18pt;
+/* Image Styling */
+.image-section {
+    margin-bottom: 70px;
 }
 
-td {
-    background-color: #1C1C1C; 
+/* Update profile image styling */
+.profile-image {
+    width: 200px;  /* Starting size */
+    border-radius: 50%;  /* Makes the image round */
+    cursor: pointer;  /* Changes the cursor to indicate it's clickable */
+    transition: width 0.3s ease;  /* Adds a smooth transition when enlarging */
 }
 
-div.text-container {
+/* Footer */
+footer {
+    background-color: #1D3557; /* Navy Blue */
+    color: #F1FAEE; /* White */
     padding: 10px;
-    background-color: #333333;
-    color: #D3D3D3; 
-    font-size: 14pt;
-}
-
-div.link-container {
-    padding: 10px;
-    background-color: #1C1C1C;
-    color: #1E90FF; 
-    font-size: 14pt;
-}
-
-div.link-container a {
-    color: #1E90FF;
-    text-decoration: none;
-}
-
-/* this is the hovering over a link colours */
-div.link-container a:hover {
-    text-decoration: underline;
-    color: #9932CC;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
