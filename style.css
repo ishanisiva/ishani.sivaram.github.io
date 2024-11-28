@@ -150,14 +150,3 @@ p {
 .instagram-link a:hover {
     color: #C13584; /* Darker Instagram Pink on hover */
 }
-
-/* Footer */
-footer {
-    background-color: #1D3557; /* Navy Blue */
-    color: #F1FAEE; /* White */
-    padding: 5px 0; 
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
