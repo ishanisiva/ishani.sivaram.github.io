@@ -15,6 +15,16 @@ nav {
     overflow: hidden;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1D3557; /* Navy Blue */
+    padding: 15px 0;
+    z-index: 10;
+}
+
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -109,6 +119,36 @@ button {
 
 button:hover {
     background-color: #A8DADC; /* Soft Light Blue on hover */
+}
+
+/* Section Titles */
+h2 {
+    color: #1D3557; /* Navy Blue */
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0;
+    line-height: 1.6; /* Better readability */
+    color: #1D3557; /* Match the body text color */
+}
+/* Instagram Link Section */
+.instagram-link {
+    text-align: center;
+    margin: 20px 0; /* Add spacing above and below */
+}
+
+.instagram-link a {
+    color: #E1306C; /* Instagram Pink */
+    font-size: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.instagram-link a:hover {
+    color: #C13584; /* Darker Instagram Pink on hover */
 }
 
 /* Footer */
